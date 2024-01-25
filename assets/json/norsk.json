@@ -1,5 +1,11 @@
 {
+  "label": "no",
   "title": "Cæsars kode",
   "welcome": "Krypter eller dekrypter Cæsar-koden!",
-  "instructions": "Skrive teksten:"
+  "instructions": " Skrive teksten:",
+  "especifications": "Kun små bokstaver uten spesialtegn aksepteres, ellers blir resultatet feil.",
+  "encrypt": "Kryptere",
+  "decrypt": "Dekryptere",
+  "encryptDone": "Her er den krypterte teksten din:",
+  "decryptDone": "Her er den dekrypterte teksten din:"
 }

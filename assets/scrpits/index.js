@@ -1,33 +1,40 @@
-var language = new XMLHttpRequest();
-var hash;
+var dataLanguage;
 
-function loadLanguage(){
-    let data = JSON.parse(language.responseText);
-    document.title = data.title;
-    document.querySelector(".welcome").innerHTML = data.welcome;
-    document.querySelector(".instructions").innerHTML = data.instructions;
-    location.hash = hash;
-}
-
-function changeLanguage(lan){
+function assignLanguage(lan){
+    let language = new XMLHttpRequest();
     switch (lan) {
         case "es":
             language.open('GET', './assets/json/espaniol.json', true);
-            hash = "es";
             break;
         case "en":
             language.open('GET', './assets/json/english.json', true);
-            hash = "en";
             break;
         case "no":
             language.open('GET', './assets/json/norsk.json', true);
-            hash = "no"
             break;
     }
     language.send();
     language.onload = function () {
-        loadLanguage();
+        dataLanguage = JSON.parse(language.responseText);
+        write();
     }
 }
 
-changeLanguage("es");
+function write(){
+    document.title = dataLanguage.title;
+    document.querySelector(".welcome").innerHTML = dataLanguage.welcome;
+    document.querySelector(".instructions").innerHTML = dataLanguage.instructions;
+    document.querySelector(".especifications").innerHTML = dataLanguage.especifications;
+    document.querySelector(".encrypt").innerHTML = dataLanguage.encrypt;
+    document.querySelector(".decrypt").innerHTML = dataLanguage.decrypt;
+    location.hash = dataLanguage.label;
+}
+
+assignLanguage("es");
+
+function encrypt(text){
+    document.querySelector(".result").innerHTML = dataLanguage.encryptDone;
+}
+function decrypt(text){
+    document.querySelector(".result").innerHTML = dataLanguage.decryptDone;
+}

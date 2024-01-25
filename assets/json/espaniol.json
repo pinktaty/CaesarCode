@@ -1,5 +1,11 @@
 {
+  "label": "es",
   "title": "Código de César",
   "welcome": "¡Encripta o desencripta el código de César!",
-  "instructions": "Escribe el texto:"
+  "instructions": "Escribe el texto:",
+  "especifications": "Sólo se acepta texto en minúsculas y sin carácteres especiales, de lo contrario el resultado será errado.",
+  "encrypt": "Encriptar",
+  "decrypt": "Desencriptar",
+  "encryptDone": "Tu texto encriptado:",
+  "decryptDone": "Tu texto desencriptado:"
 }

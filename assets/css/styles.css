@@ -9,7 +9,7 @@ h1{
     font-size: 1.5rem;
 }
 
-h3{
+h4, h3, p{
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -25,6 +25,7 @@ button{
     margin: 0 2px;
     background-color: #FFF8E3;
     opacity: 0.7;
+    border-color: #E6A4B4;
 }
 
 .presentation{
@@ -37,10 +38,42 @@ button{
     margin-bottom: 1rem;
 }
 
-.buttons{
+.language-buttons{
     display: inline-block;
     position: absolute;
     font-family: 'Noto Sans', sans-serif;
     top: 13%;
     right: 5%;
 }
+
+.area-text{
+    display: inline-block;
+    margin-left: 1.5rem;
+    width: 45%;
+}
+
+p{
+    font-size: .85rem;
+}
+
+textarea{
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+
+.area-result{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    align-items: center;
+}
+
+.result{
+    right: 30%;
+}
+
+.encrypt:hover, .decrypt:hover{
+    background-color: #F3D7CA;
+}
+

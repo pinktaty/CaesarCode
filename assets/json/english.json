@@ -1,5 +1,11 @@
 {
+  "label": "en",
   "title": "Caesar's Code",
   "welcome": "Encrypt or decrypt Caesar's Code!",
-  "instructions": "Write the text:"
+  "instructions": "Write the text:",
+  "especifications": "Only lowercase letters without special characters are accepted, otherwise the result will be incorrect.",
+  "encrypt": "Decrypt",
+  "decrypt": "Desencrypt",
+  "encryptDone": "Here's your encrypted text:",
+  "decryptDone": "Here's your decrypted text:"
 }
