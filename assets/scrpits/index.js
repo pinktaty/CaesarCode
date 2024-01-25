@@ -32,3 +32,5 @@ function changeLanguage(lan){
             break;
     }
 }
+
+changeLanguage("es");
