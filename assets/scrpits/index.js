@@ -4,6 +4,7 @@ var hash;
 function loadLanguage(){
     let data = JSON.parse(language.responseText);
     document.querySelector(".welcome").innerHTML = data.welcome;
+    document.title = data.title;
     location.hash = hash;
 }
 

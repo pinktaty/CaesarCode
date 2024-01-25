@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#settings {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    background: linear-gradient(to bottom, yellow, white);
+}
+
+.presentation{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.welcome{
+    margin-bottom: 1rem;
+}
+
+.buttons{
+    display: inline-block;
+    position: absolute;
+    top: 13%;
+    right: 5%;
+}
