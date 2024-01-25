@@ -3,9 +3,13 @@
   "title": "Código de César",
   "welcome": "¡Encripta o desencripta el código de César!",
   "instructions": "Escribe el texto:",
+  "placeholderText": "Escribe tu mensaje.",
   "especifications": "Sólo se acepta texto en minúsculas y sin carácteres especiales, de lo contrario el resultado será errado.",
   "encrypt": "Encriptar",
   "decrypt": "Desencriptar",
+  "placeholderKey": "(Número)",
+  "key": "Llave:",
+  "alert": "Sólo se acepta texto en minúsculas y sin carácteres especiales.",
   "encryptDone": "Tu texto encriptado:",
   "decryptDone": "Tu texto desencriptado:"
 }

@@ -3,9 +3,13 @@
   "title": "Caesar's Code",
   "welcome": "Encrypt or decrypt Caesar's Code!",
   "instructions": "Write the text:",
+  "placeholderText": "Write your message.",
   "especifications": "Only lowercase letters without special characters are accepted, otherwise the result will be incorrect.",
   "encrypt": "Decrypt",
   "decrypt": "Desencrypt",
+  "placeholderKey": "(Number)",
+  "key": "Key:",
+  "alert": "Only lowercase letters without special characters are accepted.",
   "encryptDone": "Here's your encrypted text:",
   "decryptDone": "Here's your decrypted text:"
 }

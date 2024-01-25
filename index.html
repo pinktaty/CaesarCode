@@ -29,19 +29,23 @@
 <main>
     <div class="area-text">
         <h4 class="instructions"></h4>
-        <textarea rows="10" cols="50"></textarea>
+        <textarea rows="10" cols="50" class="text"></textarea>
         <p class="especifications"></p>
-        <div>
-            <button class="encrypt" onclick="encrypt()"></button>
-            <button class="decrypt" onclick="decrypt()"></button>
+        <h4 class="key"></h4>
+        <textarea rows="1" cols="20" class="numberKey"></textarea>
+        <div class="send-buttons">
+            <button class="encrypt" onclick="checkText(0)"></button>
+            <button class="decrypt" onclick="checkText(1)"></button>
         </div>
     </div>
     <div class="area-result">
         <h4 class="result"></h4>
+        <h4 class="message"></h4>
     </div>
 </main>
 
 <footer>
+    <h4>Page created by <a href="https://www.linkedin.com/in/diaz-lilith04/" target="_blank" class="pinktaty">pinktaty</a></h4>
 
 </footer>
 

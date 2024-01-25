@@ -2,10 +2,14 @@
   "label": "no",
   "title": "Cæsars kode",
   "welcome": "Krypter eller dekrypter Cæsar-koden!",
-  "instructions": " Skrive teksten:",
+  "instructions": " Skriv teksten.",
+  "placeholderText": "Skriv meldingen din.",
   "especifications": "Kun små bokstaver uten spesialtegn aksepteres, ellers blir resultatet feil.",
   "encrypt": "Kryptere",
   "decrypt": "Dekryptere",
+  "placeholderKey": "(Nummer)",
+  "key": "Nøkkel:",
+  "alert": "Kun små bokstaver uten spesialtegn aksepteres.",
   "encryptDone": "Her er den krypterte teksten din:",
   "decryptDone": "Her er den dekrypterte teksten din:"
 }
