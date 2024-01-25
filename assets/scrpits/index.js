@@ -2,7 +2,6 @@ function loadLanguage(xhr, lan){
     let data = JSON.parse(xhr.responseText);
     document.querySelector(".welcome").innerHTML = data.welcome;
     location.hash = lan;
-    location.reload();
 }
 
 function changeLanguage(lan){
