@@ -1,4 +1,5 @@
 {
   "title": "Caesar's Code",
-  "welcome": "Encrypt or decrypt Caesar's Code!"
+  "welcome": "Encrypt or decrypt Caesar's Code!",
+  "instructions": "Write the text:"
 }

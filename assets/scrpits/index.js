@@ -3,8 +3,9 @@ var hash;
 
 function loadLanguage(){
     let data = JSON.parse(language.responseText);
-    document.querySelector(".welcome").innerHTML = data.welcome;
     document.title = data.title;
+    document.querySelector(".welcome").innerHTML = data.welcome;
+    document.querySelector(".instructions").innerHTML = data.instructions;
     location.hash = hash;
 }
 

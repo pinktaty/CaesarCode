@@ -1,4 +1,5 @@
 {
   "title": "Cæsars kode",
-  "welcome": "Krypter eller dekrypter Cæsar-koden!"
+  "welcome": "Krypter eller dekrypter Cæsar-koden!",
+  "instructions": "Skrive teksten:"
 }

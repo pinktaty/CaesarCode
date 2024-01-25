@@ -1,4 +1,5 @@
 {
   "title": "Código de César",
-  "welcome": "¡Encripta o desencripta el código de César!"
+  "welcome": "¡Encripta o desencripta el código de César!",
+  "instructions": "Escribe el texto:"
 }
