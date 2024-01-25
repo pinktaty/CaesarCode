@@ -1,17 +1,36 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #F5EEE6;
+}
+
+h1{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+}
+
+h3{
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #settings {
     padding: 1.5rem 1rem;
     width: 100%;
-    background: linear-gradient(to bottom, yellow, white);
+    background: linear-gradient(to bottom, #E6A4B4, #F5EEE6);
+}
+
+button{
+    border-radius: 9px;
+    padding: 6px 10px;
+    margin: 0 2px;
+    background-color: #FFF8E3;
+    opacity: 0.7;
 }
 
 .presentation{
     display: inline-block;
     margin: 0 auto;
+    padding-bottom: 1.5rem;
 }
 
 .welcome{
@@ -21,6 +40,7 @@ body{
 .buttons{
     display: inline-block;
     position: absolute;
+    font-family: 'Noto Sans', sans-serif;
     top: 13%;
     right: 5%;
 }
