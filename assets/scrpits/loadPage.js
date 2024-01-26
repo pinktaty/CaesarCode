@@ -50,18 +50,24 @@ function checkText(operation){
             }
         }
     }
-    if(operation == 0){
-        encrypt(text, key);
+    send(text, parseInt(key), operation);
+}
+
+function send(text, key, operation){
+    let result = "";
+    if(dataLanguage.label == "en"){
+        result = cryptEn(text, key, operation);
+    } else if(dataLanguage.label == "no"){
+        result = cryptNo(text, key, operation);
     } else {
-        decrypt(text, key);
+        result = cryptEs(text, key, operation);
+    }
+
+    document.querySelector(".message").innerHTML = result;
+    if(operation == 0){
+        document.querySelector(".result").innerHTML = dataLanguage.encryptDone;
+    } else {
+        document.querySelector(".result").innerHTML = dataLanguage.decryptDone;
     }
 }
 
-function encrypt(text, key){
-    document.querySelector(".result").innerHTML = dataLanguage.encryptDone;
-    document.querySelector(".message").innerHTML = text;
-}
-function decrypt(text, key){
-    document.querySelector(".result").innerHTML = dataLanguage.decryptDone;
-    document.querySelector(".message").innerHTML = text;
-}
