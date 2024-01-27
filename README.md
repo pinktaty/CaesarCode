@@ -26,6 +26,7 @@ Se implementó de esa forma para hacer sencillas a las futuras modificaciones de
 Asimismo, si se quisiesen añadir más elementos a la página, uno solamente debe añadirlo a la estructura, ya que la página funciona igual para cada lenguaje.
 La estructura del proyecto permite claridad al mismo, haciendo sencillo su mantenimiento.
 
+* * *
 
 # First Oracle ONE Program's project
 
