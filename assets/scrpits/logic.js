@@ -27,7 +27,8 @@ function aceptedNo(text){
     for(let i = 0; i< text.length; i++){
         let charac =  text.charCodeAt(i);
         if(charac < 97 || charac > 122){
-            if(charac !== 145 && charac !== 155 && charac !== 134 && charac !== 32){
+            if(charac !== 248 && charac !== 230 && charac !== 229 && charac !== 32){
+                console.log(charac)
                 return false;
             }
         }
@@ -36,21 +37,9 @@ function aceptedNo(text){
 }
 
 function cryptEs(text, key, operation){
-    let alphabet = "abcdefghijklmnñopqrstuvwxyz ";
-    let result = "";
-    for(let i = 0; i < text.length; i++){
-        let index = alphabet.indexOf(text[i]);
-        if(index !== alphabet.length-1) {
-            if (operation === 0) {
-                index = (index + key) % alphabet.length;
-            } else {
-                index = (index - key + alphabet.length - 1) % alphabet.length - 1;
-            }
-        }
-        result += alphabet[index];
-    }
-    return result;
+    return cryptAlphabet(text, key, operation, "abcdefghijklmnopqrstuvwxyz ");
 }
+
 function cryptEn(text, key, operation){
     let result = "";
     for(let i = 0; i < text.length; i++){
@@ -69,13 +58,24 @@ function cryptEn(text, key, operation){
     return result;
 }
 function cryptNo(text, key, operation){
-    let result = "";
-    if(operation === 0){
-        for (let i = 0; i < text.length; i++) {
-        }
-    } else {
-        for (let i = 0; i < text.length; i++) {
-        }
-    }
+    return cryptAlphabet(text, key, operation, "abcdefghijklmnopqrstuvwxyzæøå ");
 }
 
+function cryptAlphabet(text, key, operation, alphabet){
+    let result = "";
+    for(let i = 0; i < text.length; i++){
+        let index = alphabet.indexOf(text[i]);
+        if(index !== alphabet.length-1) {
+            if (operation === 0) {
+                index = (index + key) % alphabet.length;
+            } else {
+                index = (index - key + alphabet.length - 1) % alphabet.length ;
+            }
+            if(index === alphabet.length-1){
+                index = 0;
+            }
+        }
+        result += alphabet[index];
+    }
+    return result;
+}

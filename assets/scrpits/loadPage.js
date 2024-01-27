@@ -55,7 +55,6 @@ function checkText(operation){
             break;
     }
 
-    console.log(aceptedText);
     if(!aceptedText){
         alert(dataLanguage.alert);
         return;
