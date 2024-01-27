@@ -5,6 +5,10 @@ body, html{
     background-color: #F5EEE6;
 }
 
+main{
+    margin-top: 1.5rem;
+}
+
 h1{
     font-family: 'Exo 2', sans-serif;
     font-size: 1.7rem;
