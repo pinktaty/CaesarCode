@@ -38,33 +38,47 @@ assignLanguage("es");
 function checkText(operation){
     let text = document.querySelector(".text").value;
     let key = document.querySelector(".numberKey").value;
-    if(text == "" || key == ""){
+    if(text === "" || key === ""){
         return;
     }
-    for(let i = 0; i< text.length; i++){
-        let charac =  text.charCodeAt(i);
-        if(charac < 97 || charac > 122){
-            if(charac != 145 && charac != 155 && charac != 134){
-                alert(dataLanguage.alert);
-                return;
-            }
-        }
+
+    let aceptedText;
+    switch (dataLanguage.label) {
+        default:
+            aceptedText = aceptedEs(text);
+            break;
+        case "en":
+            aceptedText = aceptedEn(text);
+            break;
+        case "no":
+            aceptedText = aceptedNo(text);
+            break;
+    }
+
+    console.log(aceptedText);
+    if(!aceptedText){
+        alert(dataLanguage.alert);
+        return;
     }
     send(text, parseInt(key), operation);
 }
 
 function send(text, key, operation){
-    let result = "";
-    if(dataLanguage.label == "en"){
-        result = cryptEn(text, key, operation);
-    } else if(dataLanguage.label == "no"){
-        result = cryptNo(text, key, operation);
-    } else {
-        result = cryptEs(text, key, operation);
+    let result;
+    switch (dataLanguage.label) {
+        default:
+            result = cryptEs(text, key, operation);
+            break;
+        case "en":
+            result = cryptEn(text, key, operation);
+            break;
+        case "no":
+            result = cryptNo(text, key, operation);
+            break;
     }
 
     document.querySelector(".message").innerHTML = result;
-    if(operation == 0){
+    if(operation === 0){
         document.querySelector(".result").innerHTML = dataLanguage.encryptDone;
     } else {
         document.querySelector(".result").innerHTML = dataLanguage.decryptDone;

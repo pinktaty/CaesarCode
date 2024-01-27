@@ -5,7 +5,7 @@
   "instructions": "Write the text:",
   "placeholderText": "Write your message.",
   "especifications": "Only lowercase letters without special characters are accepted, otherwise the result will be incorrect.",
-  "encrypt": "Decrypt",
+  "encrypt": "Encrypt",
   "decrypt": "Desencrypt",
   "placeholderKey": "(Number)",
   "key": "Key:",
