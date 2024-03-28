@@ -1,33 +1,3 @@
-# Proyecto 01 del programa Oracle ONE
-
-## Descripción
-
-El objetivo de este proyecto es poner a prueba los conocimientos adquiridos durante la primer fase del programa.
-
-## Estructura
-
-./index.html: archivo estructura de la página.
-
-./assets/css/: carpeta que contiene el único archivo css del proyecto.
-
-./assets/json/: carpeta que contiene archivos json que son el punto de entrada para cambiar la información mostrada en la página web.
-./assets/json/espaniol.json: archivo json con la información a mostrar en la página en español.
-./assets/json/english.json: archivo json con la información a mostrar en la página en inglés.
-./assets/json/norsk.json: archivo json con la información a mostrar en la página en noruego.
-
-./assets/scripts/: carpeta que contiene al código javascript del proyecto.
-./assets/scripts/loadPage.js: código que se encarga de cargar la página según el idioma seleccionado por el esuario, el idioma por defecto es español.
-./assets/scripts/logic.js: código que se encarga de encriptar o desencriptar el texto que el usuario ha proporcionado según el idioma de la página.
-
-## Observaciones
-Desarrollé este proyecto pensando en hacer una herramient pequeña pero facilmente escalable.
-Al ser poca la información mostrada en la página tuve la idea de mantener al archivo html solamente como una estructura a seguir, los huesos, mientras que la información, la carne, se encuentra en archivos json; uno por cada lenguaje.
-Se implementó de esa forma para hacer sencillas a las futuras modificaciones de texto que se le quisieran hacer en el futuro: cualquier persona las puede hacer modificando solo el archivo json del lenguaje al que se le están creando cambios.
-Asimismo, si se quisiesen añadir más elementos a la página, uno solamente debe añadirlo a la estructura, ya que la página funciona igual para cada lenguaje.
-La estructura del proyecto permite claridad al mismo, haciendo sencillo su mantenimiento.
-
-* * *
-
 # First Oracle ONE Program's project
 
 ## Description
@@ -55,3 +25,33 @@ Since there was little information shown on the page, I had the idea of keeping 
 It was implemented in this way to make future text modifications a simple process: anyone can do them by modifying only the json file of the language to change.
 Likewise, if you want to add more elements to the page, you only have to add them to the structure, since the page works the same for each language.
 The structure of the project allows clarity, making its maintenance easy.
+
+* * *
+
+# Proyecto 01 del programa Oracle ONE
+
+## Descripción
+
+El objetivo de este proyecto es poner a prueba los conocimientos adquiridos durante la primer fase del programa.
+
+## Estructura
+
+./index.html: archivo estructura de la página.
+
+./assets/css/: carpeta que contiene el único archivo css del proyecto.
+
+./assets/json/: carpeta que contiene archivos json que son el punto de entrada para cambiar la información mostrada en la página web.
+./assets/json/espaniol.json: archivo json con la información a mostrar en la página en español.
+./assets/json/english.json: archivo json con la información a mostrar en la página en inglés.
+./assets/json/norsk.json: archivo json con la información a mostrar en la página en noruego.
+
+./assets/scripts/: carpeta que contiene al código javascript del proyecto.
+./assets/scripts/loadPage.js: código que se encarga de cargar la página según el idioma seleccionado por el esuario, el idioma por defecto es español.
+./assets/scripts/logic.js: código que se encarga de encriptar o desencriptar el texto que el usuario ha proporcionado según el idioma de la página.
+
+## Observaciones
+Desarrollé este proyecto pensando en hacer una herramient pequeña pero facilmente escalable.
+Al ser poca la información mostrada en la página tuve la idea de mantener al archivo html solamente como una estructura a seguir, los huesos, mientras que la información, la carne, se encuentra en archivos json; uno por cada lenguaje.
+Se implementó de esa forma para hacer sencillas a las futuras modificaciones de texto que se le quisieran hacer en el futuro: cualquier persona las puede hacer modificando solo el archivo json del lenguaje al que se le están creando cambios.
+Asimismo, si se quisiesen añadir más elementos a la página, uno solamente debe añadirlo a la estructura, ya que la página funciona igual para cada lenguaje.
+La estructura del proyecto permite claridad al mismo, haciendo sencillo su mantenimiento.
