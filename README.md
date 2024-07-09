@@ -2,7 +2,7 @@
 
 ## Description
 
-I developed this project thinking about making a small but easily scalable tool.
+For this project my objetive was to create a small but easily scalable tool.
 Since there was little information shown on the page, I had the idea of keeping the html file only as a structure to follow, the bones, while the information, the meat, is found in json files; one for each language.
 It was implemented in this way to make future text modifications a simple process: anyone can do them by modifying only the json file of the language to change.
 Likewise, if you want to add more elements to the page, you only have to add them to the structure, since the page works the same for each language.
@@ -34,7 +34,7 @@ The structure of the project allows clarity, making its maintenance easy.
 
 ## Descripción
 
-Desarrollé este proyecto pensando en hacer una herramienta pequeña pero facilmente escalable.
+Mi objetivo en este proyecto era hacer una herramienta pequeña pero facilmente escalable.
 Al ser poca la información mostrada en la página tuve la idea de mantener al archivo html solamente como una estructura a seguir, los huesos, mientras que la información, la carne, se encuentra en archivos json; uno por cada lenguaje.
 Se implementó de esa forma para hacer sencillas las futuras modificaciones de texto que se le quisieran hacer: cualquier persona las puede hacer por medio del archivo json del lenguaje al que se le están creando los cambios.
 Asimismo, si se quisiesen añadir más elementos a la página, uno solamente debe añadirlo a la estructura, ya que la página funciona igual para cada lenguaje.
